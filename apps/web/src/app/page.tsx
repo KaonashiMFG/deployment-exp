@@ -1,7 +1,7 @@
 import { User } from "@/types/user";
 
 export default async function HomePage() {
-  const res = await fetch("http://localhost:9000/user");
+  const res = await fetch("https://deployment-exp-web.vercel.app/user");
   const users = await res.json();
 
   console.log(users);
